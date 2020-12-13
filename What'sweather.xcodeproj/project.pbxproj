@@ -20,6 +20,9 @@
 		E879D9BD25803D5700F3F6A9 /* PersonnalizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879D9BC25803D5700F3F6A9 /* PersonnalizationRouter.swift */; };
 		E879D9C225803D7B00F3F6A9 /* PersonnalizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879D9C125803D7B00F3F6A9 /* PersonnalizationPresenter.swift */; };
 		E879D9C725803D9500F3F6A9 /* PersonnalizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879D9C625803D9500F3F6A9 /* PersonnalizationInteractor.swift */; };
+		E8EA5C6125869FD100549DC1 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5C5F25869FD000549DC1 /* LocationCell.swift */; };
+		E8EA5C6225869FD100549DC1 /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8EA5C6025869FD000549DC1 /* LocationCell.xib */; };
+		E8EA5C692586BABD00549DC1 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5C682586BABD00549DC1 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		E879D9BC25803D5700F3F6A9 /* PersonnalizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalizationRouter.swift; sourceTree = "<group>"; };
 		E879D9C125803D7B00F3F6A9 /* PersonnalizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalizationPresenter.swift; sourceTree = "<group>"; };
 		E879D9C625803D9500F3F6A9 /* PersonnalizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnalizationInteractor.swift; sourceTree = "<group>"; };
+		E8EA5C5F25869FD000549DC1 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		E8EA5C6025869FD000549DC1 /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		E8EA5C682586BABD00549DC1 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,11 @@
 		E8331321258187CD0028A795 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E8EA5C5E25869F5C00549DC1 /* router */,
+				E8EA5C5D25869EFC00549DC1 /* entity */,
+				E8EA5C5C25869EEA00549DC1 /* presenter */,
+				E8EA5C5B25869EE100549DC1 /* interactor */,
+				E8EA5C5925869ECD00549DC1 /* view */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -116,11 +127,11 @@
 		E879D9772580087400F3F6A9 /* What'sweather */ = {
 			isa = PBXGroup;
 			children = (
+				E8EA5C662586BA8A00549DC1 /* Weather */,
 				E8331321258187CD0028A795 /* Home */,
 				E879D9B825803C9F00F3F6A9 /* Views */,
 				E879D9B725803C9000F3F6A9 /* Delegates */,
 				E879D9AE25803C0E00F3F6A9 /* Personnalization */,
-				E879D97C2580087400F3F6A9 /* HomeView.swift */,
 				E879D9842580087500F3F6A9 /* Assets.xcassets */,
 				E879D9892580087500F3F6A9 /* Info.plist */,
 				E879D9812580087400F3F6A9 /* What_sweather.xcdatamodeld */,
@@ -173,6 +184,68 @@
 				E879D9862580087500F3F6A9 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E8EA5C5925869ECD00549DC1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5C5A25869ED900549DC1 /* cells */,
+				E879D97C2580087400F3F6A9 /* HomeView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E8EA5C5A25869ED900549DC1 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5C5F25869FD000549DC1 /* LocationCell.swift */,
+				E8EA5C6025869FD000549DC1 /* LocationCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		E8EA5C5B25869EE100549DC1 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		E8EA5C5C25869EEA00549DC1 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		E8EA5C5D25869EFC00549DC1 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		E8EA5C5E25869F5C00549DC1 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		E8EA5C662586BA8A00549DC1 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5C672586BA9200549DC1 /* view */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		E8EA5C672586BA9200549DC1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5C682586BABD00549DC1 /* WeatherView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +353,7 @@
 			files = (
 				E879D9882580087500F3F6A9 /* LaunchScreen.storyboard in Resources */,
 				E879D9852580087500F3F6A9 /* Assets.xcassets in Resources */,
+				E8EA5C6225869FD100549DC1 /* LocationCell.xib in Resources */,
 				E879D9802580087400F3F6A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +384,9 @@
 				E879D9BD25803D5700F3F6A9 /* PersonnalizationRouter.swift in Sources */,
 				E879D9B025803C7B00F3F6A9 /* PersonnalizationView.swift in Sources */,
 				E879D9C725803D9500F3F6A9 /* PersonnalizationInteractor.swift in Sources */,
+				E8EA5C692586BABD00549DC1 /* WeatherView.swift in Sources */,
 				E879D9792580087400F3F6A9 /* AppDelegate.swift in Sources */,
+				E8EA5C6125869FD100549DC1 /* LocationCell.swift in Sources */,
 				E879D97B2580087400F3F6A9 /* SceneDelegate.swift in Sources */,
 				E879D9C225803D7B00F3F6A9 /* PersonnalizationPresenter.swift in Sources */,
 			);

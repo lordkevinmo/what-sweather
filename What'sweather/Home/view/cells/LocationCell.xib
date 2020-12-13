@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="location-cell" id="gTV-IL-0wX" customClass="LocationCell" customModule="What_sweather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="439"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="439"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new-york" translatesAutoresizingMaskIntoConstraints="NO" id="Rel-FR-XYz">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="439"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byH-RD-ydN">
+                        <rect key="frame" x="24" y="32" width="207" height="30.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:35 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b79-r8-RPw">
+                        <rect key="frame" x="87" y="78.5" width="81.5" height="25"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xC-Wl-Zk1">
+                        <rect key="frame" x="90.5" y="192" width="74" height="55"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="40"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foggy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-Xk-HW7">
+                        <rect key="frame" x="94" y="376.5" width="67" height="30.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cloud.fog.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uBm-2x-M6C">
+                        <rect key="frame" x="56" y="382.5" width="22" height="20.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Rel-FR-XYz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3h1-bG-Htn"/>
+                <constraint firstAttribute="bottom" secondItem="Rel-FR-XYz" secondAttribute="bottom" id="6RZ-t5-bIa"/>
+                <constraint firstItem="uBm-2x-M6C" firstAttribute="centerY" secondItem="jfs-Xk-HW7" secondAttribute="centerY" id="GfK-yf-Xsz"/>
+                <constraint firstItem="5xC-Wl-Zk1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="HfR-jO-rBt"/>
+                <constraint firstItem="b79-r8-RPw" firstAttribute="top" secondItem="byH-RD-ydN" secondAttribute="bottom" constant="16" id="IzJ-hf-qxm"/>
+                <constraint firstItem="Rel-FR-XYz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Mku-Mg-0fl"/>
+                <constraint firstAttribute="trailing" secondItem="Rel-FR-XYz" secondAttribute="trailing" id="N5n-Jd-wNT"/>
+                <constraint firstItem="5xC-Wl-Zk1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OaI-Fg-WIR"/>
+                <constraint firstItem="byH-RD-ydN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="32" id="TPi-PB-KHs"/>
+                <constraint firstAttribute="bottom" secondItem="jfs-Xk-HW7" secondAttribute="bottom" constant="32" id="VWs-PR-CAT"/>
+                <constraint firstItem="jfs-Xk-HW7" firstAttribute="leading" secondItem="uBm-2x-M6C" secondAttribute="trailing" constant="16" id="Z4t-qt-iC9"/>
+                <constraint firstItem="jfs-Xk-HW7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="g6U-IE-61y"/>
+                <constraint firstAttribute="trailing" secondItem="byH-RD-ydN" secondAttribute="trailing" constant="24" id="m2a-Jt-Mot"/>
+                <constraint firstItem="b79-r8-RPw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="o8b-p5-YQI"/>
+                <constraint firstItem="byH-RD-ydN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="t75-FW-ycT"/>
+            </constraints>
+            <size key="customSize" width="255" height="439"/>
+            <connections>
+                <outlet property="bckgdImg" destination="Rel-FR-XYz" id="eZ5-vl-FcY"/>
+                <outlet property="cityLabel" destination="byH-RD-ydN" id="Y8k-cC-W6t"/>
+                <outlet property="climateImg" destination="uBm-2x-M6C" id="qO4-aW-Swv"/>
+                <outlet property="climateLabel" destination="jfs-Xk-HW7" id="g01-2r-SNY"/>
+                <outlet property="hourLabel" destination="b79-r8-RPw" id="qvd-SG-ijE"/>
+                <outlet property="temperatureLabel" destination="5xC-Wl-Zk1" id="QCJ-d9-rYC"/>
+            </connections>
+            <point key="canvasLocation" x="58.695652173913047" y="187.83482142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cloud.fog.fill" catalog="system" width="128" height="119"/>
+        <image name="new-york" width="426.5" height="284"/>
+    </resources>
+</document>
