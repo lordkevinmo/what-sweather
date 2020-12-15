@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+protocol PersonnalizationInteractorOutput: class {
+    func initView()
+}
+
+protocol PersonnalizationInteractorInput: class {
+    var output: PersonnalizationInteractorOutput! { get set }
+    func prepareContent()
+}
+
+class PersonnalizationInteractor: PersonnalizationInteractorInput {
+    var output: PersonnalizationInteractorOutput!
+    
+    func prepareContent() {
+        
+    }
+}

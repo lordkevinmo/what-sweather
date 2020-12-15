@@ -19,6 +19,8 @@ class PersonnalizationView: UIViewController {
     @IBOutlet weak var continueBtn: UIButton!
     
     static let storyboardID = "personnalization-view"
+    
+    var presenter: PersonnalizationPresenterInput!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +30,11 @@ class PersonnalizationView: UIViewController {
     }
     
     @IBAction func skipBtnDidTap(_ sender: UIButton) {
+    }
+}
+
+extension PersonnalizationView: Personnalization {
+    func error(with: String) {
+        
     }
 }
