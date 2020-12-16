@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeInput: class {
+    func viewIsInit()
+}
+
 class HomeView: UIViewController {
     @IBOutlet weak var bckgdImg: UIImageView!
     @IBOutlet weak var greeting: UILabel!
@@ -27,3 +31,8 @@ class HomeView: UIViewController {
     }
 }
 
+extension HomeView: HomeInput {
+    func viewIsInit() {
+        
+    }
+}
