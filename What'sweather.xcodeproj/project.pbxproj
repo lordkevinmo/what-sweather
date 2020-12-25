@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8083032259648A0009095A5 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8083031259648A0009095A5 /* Obfuscator.swift */; };
+		E808303A25965026009095A5 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808303925965026009095A5 /* Utility.swift */; };
 		E834B00B258BF19000D34E83 /* WeaterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834B00A258BF19000D34E83 /* WeaterInteractor.swift */; };
 		E834B013258BF1A900D34E83 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834B012258BF1A900D34E83 /* WeatherPresenter.swift */; };
 		E834B018258BF1BC00D34E83 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E834B017258BF1BC00D34E83 /* Weather.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8083031259648A0009095A5 /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		E808303925965026009095A5 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		E834B00A258BF19000D34E83 /* WeaterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaterInteractor.swift; sourceTree = "<group>"; };
 		E834B012258BF1A900D34E83 /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
 		E834B017258BF1BC00D34E83 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E808303025964874009095A5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8083031259648A0009095A5 /* Obfuscator.swift */,
+				E808303925965026009095A5 /* Utility.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E8331321258187CD0028A795 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +190,7 @@
 		E879D9772580087400F3F6A9 /* What'sweather */ = {
 			isa = PBXGroup;
 			children = (
+				E808303025964874009095A5 /* Utils */,
 				E8EA5C662586BA8A00549DC1 /* Weather */,
 				E8331321258187CD0028A795 /* Home */,
 				E879D9B825803C9F00F3F6A9 /* Views */,
@@ -452,11 +466,13 @@
 				E8F01782258AC42D0067CBFA /* HomePresenter.swift in Sources */,
 				E8F0177D258AC2A90067CBFA /* HomeInteractor.swift in Sources */,
 				E8EA5C692586BABD00549DC1 /* WeatherView.swift in Sources */,
+				E808303A25965026009095A5 /* Utility.swift in Sources */,
 				E879D9792580087400F3F6A9 /* AppDelegate.swift in Sources */,
 				E8EA5C6125869FD100549DC1 /* LocationCell.swift in Sources */,
 				E879D97B2580087400F3F6A9 /* SceneDelegate.swift in Sources */,
 				E879D9C225803D7B00F3F6A9 /* PersonnalizationPresenter.swift in Sources */,
 				E834B025258C1C1D00D34E83 /* User.swift in Sources */,
+				E8083032259648A0009095A5 /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
